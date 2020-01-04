@@ -137,7 +137,7 @@ class Request(object):
             kwargs.update(urllib3_proxy_kwargs)
             if proxy_url.startswith('socks'):
                 try:
-                    from telegram.vendor.ptb_urllib3.urllib3.contrib.socks import SOCKSProxyManager
+                    from urllib3.contrib.socks import SOCKSProxyManager
                 except ImportError:
                     raise RuntimeError('PySocks is missing')
                 mgr = SOCKSProxyManager(proxy_url, **kwargs)
