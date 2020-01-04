@@ -2,3 +2,4 @@ future>=0.16.0
 certifi
 tornado>=5.1
 cryptography
+https://github.com/python-telegram-bot/urllib3/archive/master.zip
