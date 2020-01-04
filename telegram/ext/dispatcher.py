@@ -31,7 +31,8 @@ from queue import Queue, Empty
 
 from future.builtins import range
 
-from telegram import TelegramError, Update
+from telegram import Update
+from telegram.error import TelegramError
 from telegram.ext.handler import Handler
 from telegram.ext.callbackcontext import CallbackContext
 from telegram.utils.deprecate import TelegramDeprecationWarning
